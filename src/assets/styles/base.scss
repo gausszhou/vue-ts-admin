@@ -1,0 +1,101 @@
+// Atom 提供全局的原子类样式，进阶可以使用tailwind css 或 windicss 或 unocss
+
+// Layout flex
+.display-flex {
+  display: flex;
+  align-items: center;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.justify-start {
+  justify-content: flex-end;
+}
+
+.justify-end {
+  justify-content: flex-end;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+.justify-between {
+  justify-content: space-between;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+$flexArray: 25, 33, 34, 50, 75;
+
+@each $i in $flexArray {
+  .flex-#{$i}{
+    flex: (0 1% * $i);
+  }
+}
+
+// Margin 
+// Padding
+@for $i from 1 through 10 {
+  @each $short, $long in l left, t top, r right, b bottom {
+    .m#{$short}-#{$i}x{
+      margin-#{$long}: $i  * 4 + px;
+    }
+    .p#{$short}-#{$i}{
+      padding-#{$long}: $i * 4 + px;
+    }
+  }
+}
+
+// Text Size
+// 定义字体(px)单位，小于32都为px单位字体
+@for $i from 12 to 32 {
+  .ft-#{$i},
+  .ft_#{$i} {
+    font-size: $i + px !important;
+  }
+}
+
+// Text Align
+.text-center {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: left;
+}
+
+// textover
+.text-over-elli {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+// 过渡效果
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.fade-leave,
+.fade-enter-to {
+  opacity: 1;
+}
+
+.fade-enter-active {
+  transition: opacity 0.8s;
+}
+
+.fade-leave-active {
+  transition: opacity 0.2s;
+}

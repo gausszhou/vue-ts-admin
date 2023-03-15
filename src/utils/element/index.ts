@@ -1,5 +1,6 @@
 // Element UI
-
+import i18n from "@/i18n";
+import ElementUI from 'element-ui';
 import Message from "./message";
 import Notify from "./notify";
 import Validation from "./validation";
@@ -7,7 +8,9 @@ import Validation from "./validation";
 
 export default {
   install: (Vue: any) => {
-
+    Vue.use(ElementUI, {
+      i18n: (key:string, value:any) => i18n.t(key, value) as string
+    })
     Vue.use(Validation);
     Vue.prototype.$message = Message;
     Vue.prototype.$notify = Notify;

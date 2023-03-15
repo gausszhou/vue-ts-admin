@@ -1,0 +1,76 @@
+{
+  "button": {
+    "add": "Add",
+    "all": "ALL",
+    "batchAdd": "Batch Add",
+    "batchDeletion": "Batch Deletion",
+    "batchOperation": "Batch Operation",
+    "cancel": "Cancel",
+    "changePassword": "Change Password",
+    "clearance": "Clear All",
+    "close": "Close",
+    "del": "Delete",
+    "delete": "Delete",
+    "disable": "Disable",
+    "edit": "Edit",
+    "eject": "Eject",
+    "enable": "Enable",
+    "ok": "OK",
+    "open": "Open",
+    "refresh": "Refresh",
+    "reset": "Reset",
+    "search": "Search",
+    "selectAll": "Select All",
+    "set": "Set",
+    "upload": "Upload"
+  },
+  "department": {
+    "addSub": "",
+    "delete": "",
+    "departmentName": "Department name",
+    "selectPlease": ""
+  },
+  "nav": {
+    "articleManage": "Article Management",
+    "dashboard": "Dashboard",
+    "departmentList": "Department List",
+    "departmentManage": "Department Manage",
+    "fileManage": "Files Management",
+    "home": "Home",
+    "roleManage": "Role Manage",
+    "userManage": "Users Management"
+  },
+  "tour": {
+    "close": "Close",
+    "donot": "do nothing"
+  },
+  "users": {
+    "addUser": "",
+    "alias": "",
+    "changePassword": "",
+    "confirmNewPassword": "",
+    "createTime": "",
+    "deleteUsers": "",
+    "department": "",
+    "login": "Login",
+    "loginError": "",
+    "loginSuccess": "",
+    "logout": "",
+    "logoutSuccess": "",
+    "modifyPassword": "",
+    "newPassword": "",
+    "password": "Password",
+    "role": "",
+    "userList": "",
+    "userManage": "",
+    "userName": "",
+    "username": "Username"
+  },
+  "validation": {
+    "characterLength": "Character length",
+    "characters": "character",
+    "isRequired": "This item is required",
+    "passwordConfirmIsError": "Two Passwords do not match",
+    "upTo": "Cannot be less than"
+  }
+}
